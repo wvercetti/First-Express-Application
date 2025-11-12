@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The MEAN Stack</title>
+</head>
+<body>
+    <!-- My Name -->
+    <h1>My Name: <%= name %></h1>
+
+    <!-- Header Title -->
+    <h2><%= headerTitle %></h2>
+
+    <!-- List of MEAN stack definitions -->
+    <ul>
+        <% definitions.forEach(function(item) { %>
+            <li>
+                <strong><%= item.term %>:</strong>
+                <%= item.description %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
